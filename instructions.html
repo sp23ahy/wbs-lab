@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Dr. John Noll" />
+  <title>Project Plan</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- This works in China! -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display"  rel="stylesheet">
+
+  <!-- CSS
+  ---------------------------------------------------------------------------------------------------- -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+
+  <!-- Favicon
+  ---------------------------------------------------------------------------------------------------- -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="one column"  style="margin-top: 25%"> -->
+      <div class="one column">
+	<!-- navigation bar someday -->
+      </div>
+
+     <!-- <div class="eleven columns" style="margin-top: 25%"> -->
+      <div class="eleven columns">
+<header id="title-block-header">
+<h1 class="title">Project Plan</h1>
+<p class="subtitle">5COM2006 - Design and Configuration Project</p>
+<p class="author">Dr. Satrya Fajri Pratama</p>
+</header>
+<h1 id="caution">CAUTION</h1>
+<p>If you don't set your identities on Git and Trello correctly, your contribution will not be recorded.</p>
+<ul>
+<li><p>Set your Git <code>user.email</code> property to your <code>herts.ac.uk</code> email address, and your <code>user.email</code> property to your name:</p>
+<p><code>git config --global user.email st23abc@hert.ac.uk<br/>git config --global user.name "Stig Tracy"</code></p></li>
+<li><p>Set your Trello "display name" to your Herts login ID (the part of your email address before the ‘@').</p></li>
+</ul>
+<h1 id="create-a-group-trello-board.">Create a Group trello board.</h1>
+<ol>
+<li><p>Elect a member of your group to be the Trello board host.</p></li>
+<li><p>Create a Trello board using that person's Trello account. Name your board "groupNN" where "NN" is the number of your group.</p>
+<p><img src="trello-board-title.png" alt="Kanban board name" /><br />
+</p></li>
+<li><p>Create four lists (columns) called:</p>
+<ol>
+<li>Backlog</li>
+<li>Doing</li>
+<li>Review</li>
+<li>Done</li>
+</ol>
+<p><img src="trello-four-lists.png" alt="Kanban columns" /><br />
+</p></li>
+<li><p>Invite <em>s.f.pratama@herts.ac.uk</em> to join the Trello board.</p>
+<p><img src="trello-invite-ml.png" alt="Invite ML" /><br />
+</p></li>
+<li><p>Invite <em>each</em> member of your group to join the Trello board in the same way.</p></li>
+</ol>
+<h1 id="create-a-project-plan">Create a Project Plan</h1>
+<p>Now you have a group Trello boards.</p>
+<p><em>How do you figure out what cards to create?</em></p>
+<h2 id="identify-tasks">Identify tasks</h2>
+<p>The coursework specification already enumerates the deliverables:</p>
+<ol>
+<li>Group formation.</li>
+<li>GitHub repository and Trello board.</li>
+<li>Project plan.</li>
+<li>Five forces analysis.</li>
+<li>Use cases.</li>
+<li>Sequence diagrams.</li>
+<li>ER diagram</li>
+</ol>
+<p>There are also individual elements (process, peer evaluation, quizzes).</p>
+<h2 id="initial-work-breakdown-structure-wbs">Initial Work Breakdown Structure (WBS)</h2>
+<p>We can organize these deliverables into an initial <em>Work Breakdown Structure</em> (WBS):</p>
+<p><embed src="initial_cw_wbs.pdf" /><br />
+</p>
+<h2 id="refined-wbs">Refined WBS</h2>
+<p>This WBS is too coarse however: the deliverables are too big and involve multiple things.</p>
+<p>Each task needs to be something <em>one</em> person can do in less than a week.</p>
+<p>So, we need to elaborate the WBS by "breaking down" these deliverables into smaller ones.</p>
+<p>We do this using <em>noun phrase identification</em>.</p>
+<h2 id="refined-wbs-cont.">Refined WBS, cont.</h2>
+<p>To do this, identify the <em>nouns</em> in the deliverable description (this is called <em>noun phrase identification</em>):</p>
+<ul>
+<li><em>Group</em></li>
+<li>Trello <em>board</em></li>
+<li>Git <em>repository</em></li>
+<li>Project <em>plan</em></li>
+<li>Five forces <em>analysis</em></li>
+<li><em>Use cases</em></li>
+<li>Sequence <em>diagrams</em></li>
+<li>ER <em>diagram</em></li>
+</ul>
+<h2 id="refined-wbs-cont.-1">Refined WBS, cont.</h2>
+<p>This yields the next level of decomposition:</p>
+<p><embed src="refined_cw_wbs.pdf" /><br />
+</p>
+<p>The other components can be elaborated after the corresponding lectures.</p>
+<h2 id="identifying-tasks">Identifying Tasks</h2>
+<p>The <em>leaves</em> of this WBS identify <em>deliverables</em>: these are the <em>nouns</em> ("What") of your project.</p>
+<p>Deliverables are produced by <em>tasks</em>: these are the <em>verbs</em> ("How") of your project.</p>
+<p><em>Never, <strong>EVER</strong> create tasks that don't have deliverables!</em> Tasks that don't produce anything are wasted effort.</p>
+<p>Tasks are performed by group members: these are the "Who" of your project.</p>
+<h2 id="identifying-tasks-cont.">Identifying Tasks, cont.</h2>
+<p>Tasks are described by <em>verb phrases</em> that convey what needs to be done to produce the corresponding deliverable:</p>
+<table>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Deliverable</th>
+<th>Task</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Group</td>
+<td><em>Form</em> group</td>
+</tr>
+<tr class="even">
+<td>Trello board</td>
+<td><em>Create</em> Trello board</td>
+</tr>
+<tr class="odd">
+<td>Git repository</td>
+<td><em>Create</em> Git repository</td>
+</tr>
+<tr class="even">
+<td>Project plan</td>
+<td><em>Create</em> project plan</td>
+</tr>
+<tr class="odd">
+<td>Rivalry between existing competitors</td>
+<td><em>Analyze</em> rivalry between existing competitors</td>
+</tr>
+<tr class="even">
+<td>Threat of new entrants</td>
+<td><em>Analyze</em> threat of new entrants</td>
+</tr>
+<tr class="odd">
+<td>Threat of substitute products</td>
+<td><em>Analyze</em> threat of substitute products</td>
+</tr>
+<tr class="even">
+<td>Bargaining power of customers</td>
+<td><em>Analyze</em> bargaining power of customers</td>
+</tr>
+<tr class="odd">
+<td>Bargaining power of suppliers</td>
+<td><em>Analyze</em> bargaining power of suppliers</td>
+</tr>
+<tr class="even">
+<td>Use cases</td>
+<td><em>Write</em> use cases</td>
+</tr>
+<tr class="odd">
+<td>Sequence diagrams</td>
+<td><em>Create</em> sequence diagrams</td>
+</tr>
+<tr class="even">
+<td>ER diagram</td>
+<td><em>Draw</em> ER diagram</td>
+</tr>
+</tbody>
+</table>
+<h2 id="create-task-cards">Create <em>Task</em> Cards</h2>
+<ul>
+<li>Each task gets <em>one</em> and <em>only</em> one card.</li>
+<li>Add task cards to the <em>Backlog</em> column.</li>
+<li>No duplicate cards are allowed!</li>
+<li>Never, <strong>EVER</strong> create task cards that don't have a deliverable.</li>
+</ul>
+<figure>
+<img src="trello-add-card.png" alt="Add card" /><figcaption aria-hidden="true">Add card</figcaption>
+</figure>
+<h2 id="name-the-cards-with-verb-phrases">Name the Cards with Verb Phrases</h2>
+<figure>
+<img src="trello-add-card-2.png" alt="Add card" /><figcaption aria-hidden="true">Add card</figcaption>
+</figure>
+<h2 id="write-a-meaningful-description">Write a <em>Meaningful</em> Description</h2>
+<figure>
+<img src="trello-add-description.png" alt="Write description" /><figcaption aria-hidden="true">Write description</figcaption>
+</figure>
+<h2 id="assign-responsible-parties">Assign <em>Responsible Parties</em></h2>
+<p>Rules:</p>
+<ol type="1">
+<li>Every (task) card needs a member.</li>
+<li>Only <em>one</em> member per card!</li>
+<li>That person is responsible for ensuring the task is finished.</li>
+<li>The responsible party does not have to perform the task: he or she can delegate to another group member.</li>
+</ol>
+<figure>
+<img src="trello-add-member.png" style="height:40.0%" alt="Add member" /><figcaption aria-hidden="true">Add member</figcaption>
+</figure>
+<h2 id="do-a-task">Do a task!</h2>
+<p>When the responsible party (or the person assigned by the responsible party) is ready to perform a task, he or she moves it to the "Doing" column:</p>
+<figure>
+<img src="trello-doing.png" style="height:40.0%" alt="Do it!" /><figcaption aria-hidden="true">Do it!</figcaption>
+</figure>
+<h2 id="review-done-tasks-cont.">Review "done" tasks, cont.</h2>
+<figure>
+<img src="trello-review.png" alt="Review it" /><figcaption aria-hidden="true">Review it</figcaption>
+</figure>
+<h2 id="review-done-tasks">Review "done" tasks</h2>
+<p>When the responsible party thinks the task is "done," he or she should:</p>
+<ol type="1">
+<li><p>Move the card to the "Review" column.</p></li>
+<li><p>Add someone to be the reviewer.</p></li>
+<li><p>The reviewer needs to check the task deliverables to be sure they are actually <em>Done</em>:</p>
+<ol>
+<li>Read text documents to be sure they make sense, are spelled correctly, and use correct grammar.</li>
+<li>Check YAML files using <code>validate_yaml.R</code>.</li>
+<li>Test R scripts using <em>Rscript</em> from the command line.</li>
+</ol></li>
+<li><p>If the deliverable passes all the checks, the reviewer should move the card to the "Done" column.</p>
+<p>If the deliverable does not pass all the checks, the reviewer should move the card to the "Doing" column. Trello will notify the responsible party via email.</p></li>
+</ol>
+<h2 id="done">Done!</h2>
+<figure>
+<img src="trello-done.png" alt="Done!" /><figcaption aria-hidden="true">Done!</figcaption>
+</figure>
+<h1 id="submit-your-trello-board-url.">Submit your Trello board URL.</h1>
+<ol>
+<li><p>Copy your Trello board URL.</p>
+<p>To find the board URL, open the "three dot" menu on the far right, under your avatar, then click "More..." The text box under "Link to this board" contains the URL for your board.<br />
+</p>
+<p><img src="trello-find-url.png" alt="Find URL" /><br />
+</p>
+<p>Do NOT copy the URL from your browser's URL textbox; this is not correct.</p></li>
+<li><p>Paste your Trello board URL into the assignment submission box on Canvas:<br />
+</p>
+<p><img src="canvas-submit-url.png" alt="Submit URL" /><br />
+</p>
+<p>Note: Canvas will try to display this URL, which it won't be able to do if your board is private (which is OK). Don't worry, just be sure you submitted the correct URL, by copying it <em>from</em> Canvas <em>to</em> your browser.</p></li>
+<li><p>Verify your URL!</p>
+<p>Someone other than the submitter should copy the URL <em>from</em> Canvas <em>to</em> a web browser to be sure the submitter submitted the correct URL.</p>
+<p>You should submit <em>one</em> and only <em>one</em> Trello board URL: it should be the URL of the board you are using to manage your project plan.</p></li>
+</ol>
+<h1 id="summary">Summary</h1>
+<ol type="1">
+<li><p>Create a group board.</p></li>
+<li><p>Add <em>four</em> columns:</p>
+<ol type="a">
+<li>Backlog</li>
+<li>Doing</li>
+<li>Review</li>
+<li>Done</li>
+</ol></li>
+<li><p>Create a work breakdown structure.</p></li>
+<li><p>Create exactly <em>one</em> card per <em>leaf</em> in the WBS.</p></li>
+<li><p>Add exactly <em>one</em> member to a card.</p></li>
+<li><p>Submit the <em>correct</em> URL.</p></li>
+</ol>
+<h2 id="notes">Notes</h2>
+<ol type="1">
+<li>At the end of this exercise, you should have some completed tasks.</li>
+<li>The <em>responsible party</em> does not necessisarily have to <em>do</em> the task; he or she simply ensuress the task gets done, either by doing it or by recruiting other group members to do it.</li>
+<li>Submit the <em>correct</em> URL. It should be the URL for your board, copied from the "Link to this board" box in the "More..." section of the <em>Menu</em> (<em>not</em> from the browser URL box!).</li>
+</ol>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
