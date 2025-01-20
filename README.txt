@@ -12,13 +12,13 @@ To view the instructions for completing this assignment:
     If you have installed R version 4.3.2, this will look something
     like:
 
-        C:"\Program Files\R\R-4.3.2\bin\Rscript.exe" render.R
+        "C:\Program Files\R\R-4.3.2\bin\Rscript.exe" render.R
 
     You will need to change ‘4.3.2’ to the actual version of R you have
     installed. To do this, open a CMD window, then navigate to your R
     installation:
 
-        cd C:"\Program Files\R\
+        cd "C:\Program Files\R\"
         dir
 
     You will see a directory named after the specific version of R you
